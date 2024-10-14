@@ -17,54 +17,55 @@
     <header>
       <nav class="navbar">
         <div>
-          <h1>Vaccination.ng</h1>
+          <h1><span>Vaccin</span>ation.ng</h1>
         </div>
         <div>
           <ul>
             <li>
-              <div class="hamburger-button">
-                <img src="images/hamburger.svg" />
-              </div>
+              <a class="home" href="#">Home</a>
             </li>
-            <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Schedule</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div class="hamburger-button"><img src="images/hamburger.svg" /></div>
+        <div class="hamburger-button">
+          <img src="images/hamburger.svg" alt="hamburger-menu" />
+        </div>
+        <div class="check-status-button"><button>Check Status</button></div>
       </nav>
     </header>
-
-    <section class="hero">
-      <h3>Get Vaccinated. Boost your Immune System</h3>
-      <h1>COVID-19 Vaccination Got Easier With, <span>Vaccination.ng</span></h1>
-      <p>
-        Vaccination.ng will help you find the nearest centre for vaccination, in
-        all 36 states in Nigeria.
-      </p>
-      <div>
-        <button class="get-vax-button">Get Vaccine</button>
-        <button class="help-centre-button">Help Centre</button>
+    <section class="overall-hero">
+      <div class="hero">
+        <h3>Get Vaccinated. Boost your Immune System</h3>
+        <h1>
+          COVID-19 Vaccination Got Easier With, <span>Vaccination.ng</span>
+        </h1>
+        <p>
+          Vaccination.ng will help you find the nearest centre for vaccination,
+          in all 36 states in Nigeria.
+        </p>
+        <div>
+          <button class="get-vax-button">Get Vaccine</button>
+          <button class="help-centre-button">Help Centre</button>
+        </div>
       </div>
-    </section>
 
-    <section class="hero-img">
-      <img src="images/hero.svg" />
+      <div class="hero-img">
+        <img src="images/hero.svg" alt="photo of vaccine photo" />
+      </div>
     </section>
 
     <section class="schedule-vax">
       <div class="schedule-title">
-        <h3>
-          <i><img src="images/clock.svg" /></i>
-          Schedule your Vaccination
-        </h3>
+        <i><img src="images/clock.svg" alt="clock icon" /></i>
+        <h3>Schedule your Vaccination</h3>
       </div>
 
       <div class="card-wrapper">
         <div class="card">
           <div class="item item-1">
-            <i><img src="images/location.svg" /></i>
+            <i><img src="images/location.svg" alt="map icon" /></i>
             <div>
               <span>Location</span>
               <p>Ikeja Lagos, Nigeria</p>
@@ -72,7 +73,7 @@
           </div>
 
           <div class="item item-2">
-            <i><img src="images/calendar.svg" /></i>
+            <i><img src="images/calendar.svg" alt="calendar icon" /></i>
             <div>
               <span>Date</span>
               <p>29 February, 2022</p>
@@ -80,23 +81,24 @@
           </div>
 
           <div class="item item-3">
-            <i><img src="images/shield.svg" /></i>
+            <i><img src="images/shield.svg" alt="shield icon" /></i>
             <div>
               <span>Vaccine Type</span>
               <p>Moderna</p>
             </div>
           </div>
-
-          <button>Submit</button>
+          <div class="item item-4">
+            <button>Submit</button>
+          </div>
         </div>
       </div>
     </section>
 
     <div class="vax-logos">
-      <img src="images/moderna.svg" />
-      <img src="images/pfizer.svg" />
-      <img src="images/astra.svg" />
-      <img src="images/sinovac.svg" />
+      <img src="images/moderna.svg" alt="moderna logo" />
+      <img src="images/pfizer.svg" alt="pfizer logo" />
+      <img src="images/astra.svg" alt="astra zeneca logo" />
+      <img src="images/sinovac.svg" alt="sinovac logo" />
     </div>
 
     <section class="check-result">
@@ -119,7 +121,7 @@
           <div class="last-line">
             <h2>
               Need a certificate for your COVID-19 result? Please click
-              <span>here</span>
+              <a href="#">here</a>
             </h2>
           </div>
         </div>
