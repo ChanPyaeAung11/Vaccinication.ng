@@ -1,3 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
 body {
   background-image: url(images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 35px 50px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  div {
+    h1 {
+      color: white;
+    }
+    ul {
+      transform: translateX(100%);
+      transition: transition 0.3s ease-in-out;
+      position: fixed;
+      right: 0;
+      height: 100vh;
+      background-color: red;
+      li {
+        list-style: none;
+        text-align: center;
+        margin: 0 35px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  margin-top: 32px;
+  h3 {
+    color: #17c2ec;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  h1 {
+    margin-top: 20px;
+    color: white;
+    font-size: 28px;
+
+    line-height: 30px;
+    span {
+      color: #17c2ec;
+      font-weight: 800;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 700;
+    text-wrap: wrap;
+  }
+  div {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+
+    button {
+      color: white;
+    }
+
+    .get-vax-button {
+      font-size: 14px;
+      font-weight: 700;
+      background-color: rgba(23, 194, 236, 1);
+      padding: 20px 25px 20px 25px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border: none;
+      border-radius: 20px;
+      margin-right: 20px;
+    }
+    .help-centre-button {
+      font-size: 14px;
+      font-weight: 700;
+      background-color: rgba(196, 196, 196, 0.1);
+      padding: 20px 25px 20px 25px;
+      border: 2px solid rgba(23, 194, 236, 1);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+    }
+  }
+}
+
+.hero-img {
+  margin: 50px auto 43px auto;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.schedule-vax {
+  color: white;
+  margin-bottom: 0px;
+  .schedule-title {
+    margin-bottom: 20px;
+    h3 {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-weight: 700;
+      font-size: 16px;
+      i {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .card-wrapper {
+    .card {
+      background-color: rgba(196, 196, 196, 0.1);
+      border-radius: 20px 20px 0px 0px;
+      .item-1 {
+        padding-top: 20px;
+      }
+      .item {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        align-items: center;
+        i {
+          width: 30px;
+          height: 30px;
+        }
+        div {
+          span {
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 600;
+            font-size: 16px;
+          }
+          p {
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+      }
+
+      button {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(23, 194, 236, 1);
+        border-radius: 10px;
+
+        width: 150px;
+        height: 50px;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.vax-logos {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto -50px;
+  padding: 8px;
+  img {
+  }
+}
+
+.check-result {
+  margin-top: 84px;
+
+  .double-wrapper {
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(196, 196, 196, 0.15);
+  }
+  .first-line {
+    background-color: rgba(196, 196, 196, 0.05);
+    border-radius: 20px 20px 0 0;
+    h3 {
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 20px 14px;
+      text-align: center;
+    }
+  }
+
+  .form-div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(196, 196, 196, 0.1);
+
+    form {
+      div {
+        input {
+          background-color: rgba(196, 196, 196, 0.1);
+          border-radius: 10px;
+          width: 80%;
+          height: 100%;
+          padding: 20px 0 20px 20px;
+          margin-top: 20px;
+          margin-left: 20px;
+          border: 3px solid rgba(23, 194, 236, 1);
+          font-size: 14px;
+        }
+        button {
+          margin-top: 20px;
+          background-color: rgba(196, 196, 196, 0.1);
+          border-radius: 10px;
+          border: 3px solid rgba(23, 194, 236, 1);
+          text-align: center;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding: 16.5px 51.5px;
+          margin-bottom: 48px;
+          width: 50%;
+          color: rgba(23, 194, 236, 1);
+          font-weight: bolder;
+          font-size: 14px;
+        }
+      }
+    }
+    .last-line {
+      border-radius: 10px;
+      background-color: rgba(196, 196, 196, 0.05);
+      text-align: center;
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(23, 194, 236, 1);
+      padding: 13px;
+
+      height: 100%;
+      margin: 0 20px 20px 20px;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
 }
